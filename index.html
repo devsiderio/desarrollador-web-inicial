@@ -64,18 +64,21 @@
         <div class="container"><h2>Presentación del personal</h2></div>
       </section>
       <!-- Section Productos -->
-      <section id="catalogo" class="mb-5">
+      <section id="catalogo" class="py-3">
         <div class="container text-center">
           <h2>Nuestras Ecocletas</h2>
           <p>
             Descrubrí nuestra selección de bicicletas eléctricas de alta calidad
             y rendimiento.
           </p>
-          <div id="carousel-de-productos" class="row">
-            <!-- fotos: 1 activa, 5 botones abajo -->
-            <div class="col-lg-6 text-center">
+          <div class="row">
+            <!-- fotos: 1 activa, botones abajo -->
+            <div
+              class="col-lg-6 text-center rounded-3"
+              id="carousel-de-productos"
+            >
               <!-- imagen activa -->
-              <div>
+              <div id="hl" class="rounded-top-2">
                 <img
                   id="prod-activo"
                   src="/assets/images/catalogo/ancheer_27_5.jpg"
@@ -85,13 +88,13 @@
                 />
               </div>
               <!-- botones thumbnails -->
-              <div id="thumbs">
+              <div id="thumbnails" class="p-1 shadow">
                 <button type="button" id="ancheer" class="thumbs seleccionado">
                   <img
                     src="/assets/images/catalogo/ancheer_27_5.jpg"
                     alt=""
                     class="img-thumbnail"
-                    width="90px"
+                    width="80px"
                   />
                 </button>
                 <button type="button" id="fiat" class="thumbs">
@@ -99,7 +102,7 @@
                     src="/assets/images/catalogo/fiat_500.jpg"
                     alt=""
                     class="img-thumbnail"
-                    width="90px"
+                    width="80px"
                   />
                 </button>
                 <button type="button" id="randers" class="thumbs">
@@ -107,7 +110,7 @@
                     src="/assets/images/catalogo/e-power_mountain.jpg"
                     alt=""
                     class="img-thumbnail"
-                    width="90px"
+                    width="80px"
                   />
                 </button>
                 <button type="button" id="velocity" class="thumbs">
@@ -115,7 +118,7 @@
                     src="/assets/images/catalogo/velocity_c3.jpg"
                     alt=""
                     class="img-thumbnail"
-                    width="90px"
+                    width="80px"
                   />
                 </button>
                 <button type="button" id="vr" class="thumbs">
@@ -123,7 +126,7 @@
                     src="/assets/images/catalogo/vr1000w.jpg"
                     alt=""
                     class="img-thumbnail"
-                    width="90px"
+                    width="80px"
                   />
                 </button>
               </div>
@@ -289,11 +292,11 @@
         </div>
       </section>
     </main>
-    <script src="./assets/source/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/source/main.js"></script>
   </body>
 </html>

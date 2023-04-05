@@ -8,7 +8,7 @@ Trcr: #FF7ABA
 
 h2,
 h3 {
-  color: #62e9ff;
+  color: black;
 }
 
 /* ESTILOS PRODUCTOS */
@@ -24,10 +24,60 @@ button {
   transition: 200ms;
 }
 
+.thumbs:hover {
+  border: 1px solid #ffeb47;
+  filter: blur(1px);
+  border-radius: var(--bs-border-radius);
+}
+
 .seleccionado {
   filter: blur(1px);
-  border: 1px solid #62e9ff;
-  transition: 500ms;
+  border: 1px solid #ffeb47;
+  border-radius: var(--bs-border-radius);
+  position: relative;
+  transition: ease-in-out 300ms;
+}
+
+.seleccionado::after {
+  content: "";
+  filter: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffeb47;
+}
+
+#thumbnails {
+  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  background-color: #32a1b3;
+  border: 2px solid #ffeb47;
+  border-radius: 12px;
+}
+
+#thumbnails::-webkit-scrollbar {
+  height: 10px;
+  border-radius: 10px;
+}
+
+#thumbnails::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 0 0 10px 10px;
+}
+
+#thumbnails::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #ffeb47;
+  border-radius: 0 0 10px 10px;
+}
+
+#catalogo {
+  background-color: #62e9ff;
 }
 
 /* Estilos para el formulario */
@@ -54,7 +104,7 @@ form textarea {
 }
 
 form button[type="submit"] {
-  background-color: #008080;
+  background-color: #62e9ff;
   color: #fff;
   border: none;
   padding: 10px 20px;
