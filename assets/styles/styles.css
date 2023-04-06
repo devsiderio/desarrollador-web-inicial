@@ -20,19 +20,17 @@ button {
 }
 
 .thumbs {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition: 200ms;
 }
 
 .thumbs:hover {
-  border: 1px solid #ffeb47;
-  filter: blur(1px);
+  border: 2px solid #ffeb47;
   border-radius: var(--bs-border-radius);
 }
 
 .seleccionado {
-  filter: blur(1px);
-  border: 1px solid #ffeb47;
+  border: 2px solid #ffeb47;
   border-radius: var(--bs-border-radius);
   position: relative;
   transition: ease-in-out 300ms;

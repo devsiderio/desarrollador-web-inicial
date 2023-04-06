@@ -1,4 +1,4 @@
-class Thumbnails {
+class LasBicis {
   constructor(name, contActivo) {
     this.contThumbs = document.querySelector(`#${name}`);
 
@@ -8,10 +8,15 @@ class Thumbnails {
       boton.addEventListener("click", () => this.activarBoton(boton));
       boton.addEventListener("click", () => this.changeHighlight());
       boton.addEventListener("click", () => this.scrollIfOut(boton));
+      boton.addEventListener("click", () => this.changeDescription());
       boton.addEventListener("dragstart", function (event) {
         event.preventDefault();
       });
     });
+    // Hacemos una llamada inicial para que la descripcion no esté vacia y le damos el id de la primera imagen
+    // que va a aparecer en nuestro catalogo
+    this.idActivo = "ancheer";
+    this.changeDescription();
   }
 
   activarBoton(boton) {
@@ -45,6 +50,23 @@ class Thumbnails {
       this.contThumbs.scrollBy(-dist, 0);
     }
   }
+
+  changeDescription() {
+    // traemos todos los contenedores de la lista de la descripcion
+    const nombreProd = document.querySelector("#nombre-del-prod");
+    const marcaProd = document.querySelector("#marca-del-prod");
+    const wattsProd = document.querySelector("#watts-del-prod");
+    const velMaxProd = document.querySelector("#vel-del-prod");
+    const rangoBateriaProd = document.querySelector("#ran-del-prod");
+    const infoProd = document.querySelector("#info-del-prod");
+    // modificamos el texto
+    nombreProd.innerText = bicis[this.idActivo].nombre;
+    marcaProd.innerText = bicis[this.idActivo].marca;
+    wattsProd.innerText = bicis[this.idActivo].potencia;
+    velMaxProd.innerText = `${bicis[this.idActivo].velocidadMax} km/h`;
+    rangoBateriaProd.innerText = `${bicis[this.idActivo].rangoMaxBateria} km`;
+    infoProd.innerText = bicis[this.idActivo].descripcion;
+  }
 }
 
-new Thumbnails("thumbnails", "prod-activo");
+new LasBicis("thumbnails", "prod-activo");
