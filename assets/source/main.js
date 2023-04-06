@@ -44,9 +44,9 @@ class LasBicis {
     // Una ditancia arbitraria para scrollear, elegi 1.5 porque seria 1 boton y medio de scroll
     let dist = widthBtn * 1.5;
 
-    if (posBtn + widthBtn > widthContenedor) {
+    if (posBtn + dist > widthContenedor) {
       this.contThumbs.scrollBy(dist, 0);
-    } else if (posBtn < 0) {
+    } else if (posBtn - widthBtn < 0) {
       this.contThumbs.scrollBy(-dist, 0);
     }
   }
