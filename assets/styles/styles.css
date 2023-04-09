@@ -14,6 +14,15 @@ h3 {
   color: black;
 }
 
+/* Estilos Presentación de Empresa */
+#welcome {
+  background-color: #62e9ff;
+}
+
+/* Estilos Presentación de Personal */
+#personal {
+  background-color: #47ff56;
+}
 /* Estilos Catálogo */
 
 button {
@@ -96,6 +105,11 @@ button {
 }
 
 /* Estilos para el formulario */
+
+#contacto {
+  background-color: #62e9ff;
+}
+
 form label {
   display: block;
   margin-bottom: 5px;
