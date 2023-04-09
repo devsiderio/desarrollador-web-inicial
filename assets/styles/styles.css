@@ -141,43 +141,53 @@ footer {
   border-top: 2px solid #008080;
 }
 
-
-
-
 /* Botones Sociales + flechas */
 
 /*.social {position:fixed;left:123px;top:371px;z-index:2000;} */
 .social {
-  position:fixed;
-  left:0px;
-  top:371px;
-  z-index:2000;
+  position: fixed;
+  left: 0px;
+  top: 371px;
+  z-index: 2000;
 }
 .social a {
-  display:inline-block;
-  color:#fff;
-  background:#000;
-  font-size:22px;
-  padding:10px 15px;
-  text-decoration:none;
-  -webkit-transition:all 500ms ease;
-  -o-transition:all 500ms ease;
-  transition:all 500ms ease;
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  font-size: 22px;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 .social ul {
-  list-style:none;
-  margin:0px;
+  list-style: none;
+  margin: 0px;
 }
 
-.social ul li .icon-facebook {background:#3b5998;} 
-.social ul li .icon-twitter {background:#00abf0;}
-.social ul li .icon-google-plus {background:#ae181f;}
-.social ul li .icon-whatsapp {background:#00e676;}
-.social ul li .icon-tumblr {background:#36465d;}
-.social ul li a:hover {padding:10px 30px;}
+.social ul li .icon-facebook {
+  background: #3b5998;
+}
+.social ul li .icon-twitter {
+  background: #00abf0;
+}
+.social ul li .icon-google-plus {
+  background: #ae181f;
+}
+.social ul li .icon-whatsapp {
+  background: #00e676;
+}
+.social ul li .icon-tumblr {
+  background: #36465d;
+}
+.social ul li a:hover {
+  padding: 10px 30px;
+}
 
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'Compucalitv' !important;
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "Compucalitv" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -188,13 +198,15 @@ footer {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 @media all and (max-width: 1100px) {
-.social {position:static;margin-bottom:50px;}
-.social ul li {float:left;}
-.simplescrollup__button i {color:#014464;}
-
+  .social {
+    position: static;
+    margin-bottom: 50px;
+  }
+  .social ul li {
+    float: left;
+  }
+  .simplescrollup__button i {
+    color: #014464;
+  }
 }
-
-  
