@@ -49,7 +49,7 @@
     </header>
     <main>
       <!-- Section Sobre nosotros -->
-      <section id="welcome">
+      <section id="welcome" class="py-3">
         <div class="container">
           <h2>Presentación de la empresa</h2>
           <p>
@@ -60,13 +60,16 @@
           </p>
         </div>
       </section>
-      <section id="personal">
+
+      <!-- Section Personal -->
+      <section id="personal" class="py-3">
         <div class="container"><h2>Presentación del personal</h2></div>
       </section>
+
       <!-- Section Productos -->
       <section id="catalogo" class="py-3">
         <div class="container text-center">
-          <h2>Nuestras Ecocletas</h2>
+          <h2>Nuestras EcoCletas</h2>
           <p>
             Descrubrí nuestra selección de bicicletas eléctricas de alta calidad
             y rendimiento.
@@ -186,35 +189,118 @@
           </div>
         </div>
       </section>
-      <!-- Section Reservas -->
-      <section id="reservas">
-        <div class="container">
+
+      <!-- Section Reservas (Wizard) -->
+      <section id="reservas" class="py-3">
+        <div class="container text-center">
           <h2>Reservas</h2>
           <p>
-            Para realizar una reserva, por favor complete el siguiente
+            Para reservar tu EcoCleta, por favor complete el siguiente
             formulario:
           </p>
-          <form>
-            <label for="fecha">Fecha de reserva:</label>
-            <input type="date" id="fecha" name="fecha" required />
-
-            <label for="hora">Hora de inicio:</label>
-            <input type="time" id="hora" name="hora" required />
-
-            <label for="modelo">Modelo de bicicleta:</label>
-            <select id="modelo" name="modelo">
-              <option value="modelo-a">Modelo A</option>
-              <option value="modelo-b">Modelo B</option>
-              <!-- Agrega más modelos aquí -->
-            </select>
-
-            <button type="submit">Reservar</button>
-          </form>
+          <div>
+            <div
+              class="container col-lg-6 rounded-3 d-lg-block d-flex flex-column-reverse"
+            >
+              <!-- botones reservas-thumbnails -->
+              <div id="reservas-thumbnails" class="p-1 shadow">
+                <button type="button" class="thumbs seleccionado">
+                  <img
+                    src="./assets/images/wizard/1.jpg"
+                    alt="1"
+                    class="img-thumbnail"
+                    width="80px"
+                    onclick="location.href='#wizard-1'"
+                  />
+                </button>
+                <button type="button" id="wizard-button-2" class="thumbs">
+                  <img
+                    src="./assets/images/wizard/2.jpg"
+                    alt="2"
+                    class="img-thumbnail"
+                    width="80px"
+                    onclick="location.href='#wizard-2'"
+                  />
+                </button>
+                <button type="button" id="wizard-button-3" class="thumbs">
+                  <img
+                    src="./assets/images/wizard/3.jpg"
+                    alt="3"
+                    class="img-thumbnail"
+                    width="80px"
+                    onclick="location.href='#wizard-3'"
+                  />
+                </button>
+              </div>
+            </div>
+            <!-- wizard -->
+            <div class="container col-lg-6">
+              <form name="wizard" method="POST">
+                <ul class="list-group form-group">
+                  <li class="list-group-item" id="wizard-1">
+                    <label for="fecha"><h5>Fecha de reserva:</h5></label>
+                    <input
+                      type="date"
+                      id="fecha"
+                      name="fecha"
+                      class="form-control"
+                      required
+                    />
+                    <button type="button" class="btn btn-info m-2">
+                      Adelante
+                    </button>
+                  </li>
+                  <li class="list-group-item" id="wizard-2">
+                    <label for="hora"><h5>Hora de inicio:</h5></label>
+                    <input
+                      type="time"
+                      id="hora"
+                      name="hora"
+                      class="form-control"
+                      required
+                    />
+                    <button type="button" class="btn btn-secondary m-2">
+                      Atrás
+                    </button>
+                    <button type="button" class="btn btn-info m-2">
+                      Adelante
+                    </button>
+                  </li>
+                  <li class="list-group-item" id="wizard-3">
+                    <label for="modelo"><h5>Modelo:</h5></label>
+                    <select
+                      id="modelo"
+                      name="modelo"
+                      class="form-control text-center"
+                    >
+                      <option value="default">
+                        --Seleccione su EcoCleta--
+                      </option>
+                      <option value="modelo-1">Ancheer 27.5</option>
+                      <option value="modelo-2">Fiat 500</option>
+                      <option value="modelo-3">E-Power Mountain</option>
+                      <option value="modelo-4">Velocity C3</option>
+                      <option value="modelo-5">VR1000W</option>
+                      <option value="modelo-6">Explore E+ 2</option>
+                      <option value="modelo-7">Turbo Levo Comp</option>
+                      <option value="modelo-8">Verve+ 2</option>
+                    </select>
+                    <button type="button" class="btn btn-secondary m-2">
+                      Atrás
+                    </button>
+                    <button type="button submit" class="btn btn-primary m-2">
+                      Reservar
+                    </button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Section Contacto -->
-      <section id="contacto" class="container d-flex">
+      <section id="contacto" class="container d-flex col-lg-6 py-3">
         <div class="row justify-content-center col-md-12">
           <div class="card">
             <div class="card-header">
@@ -325,6 +411,9 @@
             </div>
           </div>
         </div>
+      </section>
+      <section id="footer" class="py-3 text-center">
+        <h5>EcoCletas - 2023</h5>
       </section>
     </main>
     <script

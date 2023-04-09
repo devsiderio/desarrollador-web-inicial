@@ -11,7 +11,7 @@ h3 {
   color: black;
 }
 
-/* ESTILOS PRODUCTOS */
+/* Estilos Catálogo */
 
 button {
   border: 0;
@@ -46,7 +46,7 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ffeb47;
+  background-color: rgba(255, 235, 71, 0.8);
 }
 
 #thumbnails {
@@ -76,6 +76,20 @@ button {
 
 #catalogo {
   background-color: #62e9ff;
+}
+
+/* Estilos Wizard */
+
+#reservas {
+  background-color: #47ff56;
+}
+
+#reservas-thumbnails {
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  background-color: #32a1b3;
+  border: 2px solid #ffeb47;
+  border-radius: 12px;
 }
 
 /* Estilos para el formulario */
