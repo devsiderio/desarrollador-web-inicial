@@ -30,4 +30,5 @@ $("#guardar").click(function () {
   let motivo = $("#motivo").val();
   let mensaje = $("#mensaje").val();
   let terminos = $("#terminos").is(":checked");
+  alert("Enviado");
 });
