@@ -1,127 +1,13 @@
-/*
 
-Ppal:#62E9FF 
-Scdr: #32A1B3 
-Trcr: #FF7ABA 
-#FFEB47
-*/
-
-h2,
-h3 {
-  color: black;
+main{
+  padding: 5vh 7.5vw;
 }
-
-/* ESTILOS PRODUCTOS */
-
-button {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-}
-
-.thumbs {
-  border: 1px solid transparent;
-  transition: 200ms;
-}
-
-.thumbs:hover {
-  border: 1px solid #ffeb47;
-  filter: blur(1px);
-  border-radius: var(--bs-border-radius);
-}
-
-.seleccionado {
-  filter: blur(1px);
-  border: 1px solid #ffeb47;
-  border-radius: var(--bs-border-radius);
-  position: relative;
-  transition: ease-in-out 300ms;
-}
-
-.seleccionado::after {
-  content: "";
-  filter: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ffeb47;
-}
-
-#thumbnails {
-  white-space: nowrap;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  background-color: #32a1b3;
-  border: 2px solid #ffeb47;
-  border-radius: 12px;
-}
-
-#thumbnails::-webkit-scrollbar {
-  height: 10px;
-  border-radius: 10px;
-}
-
-#thumbnails::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-  border-radius: 0 0 10px 10px;
-}
-
-#thumbnails::-webkit-scrollbar-thumb {
-  height: 5px;
-  background-color: #ffeb47;
-  border-radius: 0 0 10px 10px;
-}
-
-#catalogo {
-  background-color: #62e9ff;
-}
-
-/* Estilos para el formulario */
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-form textarea {
-  height: 150px;
-}
-
-form button[type="submit"] {
-  background-color: #62e9ff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-form button[type="submit"]:hover {
-  background-color: #005454;
-}
-
-/* Estilos para el pie de página */
-footer {
-  background-color: #f8f8f8;
-  padding: 20px;
+.titulo{
+  font-family: "Prata";
+  font-size: 1.5rem;
   text-align: center;
-  border-top: 2px solid #008080;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 }

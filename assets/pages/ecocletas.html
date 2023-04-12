@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Prata&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/ecocletas.css">
+    <title>Ecocletas</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar menu-cerrado" id="navbar">
+        <a id="logo" class="navbar-logo" href="../../index.html"><img src="../images/Logo.svg" alt="Logo de Ecocletas"/></a>
+        <div class="menu-nav" id="menu-nav">
+          <img src="../images/menu.png" class="menu-nav-img" id="menu-nav-img" alt="">
+          <img src="../images/close.png" class="close-nav-img" id="close-nav-img" alt="">
+        </div>
+        <div class="navbar-nav no-visible" id="navbar-nav">
+          <a class="nav-link" href="../../index.html">Inicio</a>
+          <a class="nav-link nav-active" href="#">Ecocletas</a>
+          <a class="nav-link" href="../pages/reservas.html">Reservas</a>
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    
+    <section id="catalogo" class="section-ecocletas">
+        <div class="ecocletas-titulo">
+          <h2>Nuestras EcoCletas</h2>
+          <p>Descrubrí nuestra selección de bicicletas eléctricas de alta calidad y rendimiento.</p>
+        </div>
+        <div class="ecocletas-contenedor-general">
+          <!-- fotos: 1 activa, botones abajo -->
+          <div class="contenedor-imagenes" id="carousel-de-productos">
+            <!-- imagen activa -->
+            <div id="hl" class="contenedor-imagen-activa">
+              <img id="prod-activo" src="../images/catalogo/ancheer_27_5.jpg" alt="" class="imagen-activa"/>
+            </div>
+            <!-- botones thumbnails -->
+            <div id="thumbnails" class="contenedor-botones">
+              <button type="button" id="ancheer" class="thumbs seleccionado">
+                <img src="../images/catalogo/ancheer_27_5.jpg" alt="" class="img-thumbnail"/>
+              </button>
+              <button type="button" id="fiat" class="thumbs">
+                <img src="../images/catalogo/fiat_500.jpg" alt="" class="img-thumbnail"/>
+              </button>
+              <button type="button" id="randers" class="thumbs">
+                <img  src="../images/catalogo/e-power_mountain.jpg" alt="" class="img-thumbnail"/>
+              </button>
+              <button type="button" id="velocity" class="thumbs">
+                <img src="../images/catalogo/velocity_c3.jpg" alt="" class="img-thumbnail"/>
+              </button>
+              <button type="button" id="vr" class="thumbs">
+                <img src="../images/catalogo/vr1000w.jpg" alt="" class="img-thumbnail"/>
+              </button>
+              <button type="button" id="giant" class="thumbs">
+                <img src="../images/catalogo/explore_e2.jpg" alt="" class="img-thumbnail" />
+              </button>
+              <button type="button" id="specialized" class="thumbs">
+                <img src="../images/catalogo/specialized_turbo.jpg" alt="" class="img-thumbnail"/>
+              </button>
+              <button type="button" id="trek" class="thumbs">
+                <img src="../images/catalogo/trek-verve.jpg" alt="" class="img-thumbnail"/>
+              </button>
+            </div>
+          </div>
+          <!-- descripción -->
+          <div class="contenedor-descripciones">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-border">
+                Nombre
+                <h2 id="nombre-del-prod" class="p-producto"></h2></h2>
+              </li>
+              <li class="list-group-item list-group-item-border">
+                Marca
+                <p id="marca-del-prod" class="p-producto"></p>
+              </li>
+              <li class="list-group-item list-group-item-border">
+                Potencia(Watts)
+                <p id="watts-del-prod" class="p-producto"></p>
+              </li>
+              <li class="list-group-item list-group-item-border">
+                Vel. Maxima
+                <p id="vel-del-prod" class="p-producto"></p>
+              </li>
+              <li class="list-group-item list-group-item-border">
+                Rango de la bateria
+                <p id="ran-del-prod" class="p-producto"></p>
+              </li>
+              <li class="list-group-item">
+                Mas info
+                <p id="info-del-prod" class="p-producto"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <section class="footer-container-copy">
+          <p>© 2023 - Argentina programa - Desarrollo web inicial.</p>
+        </section>
+        <section class="footer-container-github">
+          <p class="footer-titulo">Grupo B</p>
+          <a href="https://github.com/devsiderio/desarrollador-web-inicial" target="_blank#"><img src="../images/icon-github.png" title="Repositorio del proyecto"></a>
+        </section>
+      </div>
+    </footer>
+
+    <script src="../source/main.js"></script>
+    <script src="../source/catalogo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+/* ESTILOS RESERVAS */
+.section-reservas{
+    height: 80vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .contenedor-titulo-reservas{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .contenedor-titulo-reservas h2{
+      font-size: 2rem;
+      font-family: "Prata";
+      margin-bottom: 1vh;
+    }
+  .contenedor-reservas{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .pasos{
+      width: 65%;
+      height: 20%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+      .thumbs{
+        height: 100%;
+        border: none;
+      }
+      .thumbs:hover{
+        cursor: pointer;
+      }
+      .seleccionado{
+        position: relative;
+      }
+      .seleccionado::after {
+        content: "";
+        filter: none;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(163, 242, 254, 0.278);
+    }
+        .thumbnail{
+          display: flex;
+          align-items: center;
+        }
+        .thumbnail-medio{
+          border-left: 1px solid #a1a1a1;
+          border-right: 1px solid #a1a1a1;
+        }
+        .icon-wizard{
+          width: 35px;
+          margin: 0 1vw 1vh 1vw;
+        }
+        .thumbnail p{
+          text-align: left;
+          margin-top: .5vh;
+          color: #8b8987;
+        }
+        .text-thumbnail{
+          font-weight: 600;
+        }
+    .contenedor-formulario{
+      height: 73%;
+      width: 65%;
+      margin-bottom: 7%;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+      .wizard-form{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+        .list-group{
+          width: 55%;
+        }
+          .list-group-item{
+            list-style-type: none;
+          }
+          .form-control{
+            width: 100%;
+            height: 5vh;
+            padding: 0 5vw;
+            border: 1px solid #a1a1a1;
+            margin: 2vh 0;
+            color: #a1a1a1;
+          }
+          .wizard-btn{
+            width: 50%;
+            height: 5vh;
+            border: 1px solid #a1a1a1;
+            margin: 5% 25% 0 25%;
+          }
+          .wizard-btn:hover{
+            cursor: pointer;
+            background-color: rgba(163, 242, 254, 0.278);
+          }
+
+
+@media screen and (max-width:768px){
+  .contenedor-titulo-reservas{
+    margin: 0 7.5vw;
+    text-align: center;
+  }
+    .pasos, .contenedor-formulario{
+      width: 80%;
+    }
+    .icon-wizard{
+      width: 25px;
+      height: 35px;
+      margin: 0 1vw 1vh 1vw;
+    }
+    .form-control{
+      height: 7vh;
+    }
+    .wizard-btn{
+      width: 70%;
+      height: 7vh;
+      margin: 5% 15% 0 15%;
+    }
+}

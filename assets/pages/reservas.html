@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Prata&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/reservas.css">
+    <title>Ecocletas</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar menu-cerrado" id="navbar">
+        <a id="logo" class="navbar-logo" href="../../index.html"><img src="../images/Logo.svg" alt="Logo de Ecocletas"/></a>
+        <div class="menu-nav" id="menu-nav">
+          <img src="../images/menu.png" class="menu-nav-img" id="menu-nav-img" alt="">
+          <img src="../images/close.png" class="close-nav-img" id="close-nav-img" alt="">
+        </div>
+        <div class="navbar-nav no-visible" id="navbar-nav">
+          <a class="nav-link" href="../../index.html">Inicio</a>
+          <a class="nav-link" href="../pages/ecocletas.html">Ecocletas</a>
+          <a class="nav-link nav-active" href="#">Reservas</a>
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section Reservas -->
+      <section id="reservas" class="section-reservas">
+        <div class="contenedor-titulo-reservas">
+          <h2>Reservas</h2>
+          <p>Para reservar tu EcoCleta, por favor complete el siguiente formulario</p>
+        </div>
+        <div class="contenedor-reservas">
+          <div class="pasos">
+            <!-- botones reservas-thumbnails -->
+              <button type="button" class="thumbs seleccionado">
+                <div onclick="location.href='#wizard-1'" class="thumbnail">
+                  <img src="../images/wizard/icon-calendar.png" alt="" class="icon-wizard">
+                  <div>
+                    <p class="text-thumbnail">Cuando será la reserva?</p>
+                    <p>Paso 1</p>
+                  </div>
+                </div>
+                <!-- <img src="../images/wizard/1.jpg" alt="1" class="img-thumbnail" onclick="location.href='#wizard-1'" /> -->
+              </button>
+              <button type="button" id="wizard-button-2" class="thumbs">
+                <div onclick="location.href='#wizard-1'" class="thumbnail thumbnail-medio">
+                  <img src="../images/wizard/icon-bici.png" alt="" class="icon-wizard">
+                    <div>
+                      <p class="text-thumbnail">Elije tu EcoCleta</p>
+                      <p>Paso 2</p>
+                    </div>
+                </div>
+                <!-- <img src="../images/wizard/2.jpg" alt="2" class="img-thumbnail" onclick="location.href='#wizard-2'" /> -->
+              </button>
+              <button type="button" id="wizard-button-3" class="thumbs">
+                <div onclick="location.href='#wizard-1'" class="thumbnail">
+                  <img src="../images/wizard/icon-person.png" alt="" class="icon-wizard">
+                  <div>
+                    <p class="text-thumbnail">Confirma tus datos</p>
+                    <p>Paso 3</p>
+                  </div>
+                </div>
+                <!-- <img src="../images/wizard/3.jpg" alt="3" class="img-thumbnail" onclick="location.href='#wizard-3'" /> -->
+              </button>
+          </div>
+          <!-- wizard -->
+          <div class="contenedor-formulario">
+            <form name="wizard" method="POST" class="wizard-form">
+              <ul class="list-group">
+                <li class="list-group-item" id="wizard-1">
+                  <label for="fecha">Fecha de reserva:</label>
+                  <input type="date" id="fecha" name="fecha" class="form-control" required />
+                  <!-- <button type="button" class="btn btn-info m-2">Adelante</button> -->
+                </li>
+                <li class="list-group-item" id="wizard-2">
+                  <label for="hora">Hora de inicio:</label>
+                  <input type="time" id="hora" name="hora" class="form-control"  required />
+                  <!-- <button type="button" class="btn btn-secondary m-2">Atrás</button> -->
+                  <button type="button" class="wizard-btn">Adelante</button>
+                </li>
+                <!-- <li class="list-group-item" id="wizard-3">
+                  <label for="modelo"><h5>Modelo:</h5></label>
+                  <select id="modelo" name="modelo" class="form-control text-center" >
+                    <option value="default">--Seleccione su EcoCleta--</option>
+                    <option value="modelo-1">Ancheer 27.5</option>
+                    <option value="modelo-2">Fiat 500</option>
+                    <option value="modelo-3">E-Power Mountain</option>
+                    <option value="modelo-4">Velocity C3</option>
+                    <option value="modelo-5">VR1000W</option>
+                    <option value="modelo-6">Explore E+ 2</option>
+                    <option value="modelo-7">Turbo Levo Comp</option>
+                    <option value="modelo-8">Verve+ 2</option>
+                  </select>
+                  <button type="button" class="btn btn-secondary m-2"> Atrás</button>
+                  <button type="button submit" class="btn btn-primary m-2">Reservar</button>
+                </li> -->
+              </ul>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <section class="footer-container-copy">
+          <p>© 2023 - Argentina programa - Desarrollo web inicial.</p>
+        </section>
+        <section class="footer-container-github">
+          <p class="footer-titulo">Grupo B</p>
+          <a href="https://github.com/devsiderio/desarrollador-web-inicial" target="_blank#"><img src="../images/icon-github.png" title="Repositorio del proyecto"></a>
+        </section>
+      </div>
+    </footer>
+
+    <script src="../source/main.js"></script>
+  </body>
+</html>

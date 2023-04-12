@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Prata&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <title>Ecocletas</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar menu-cerrado" id="navbar">
+        <a id="logo" class="navbar-logo" href="../../index.html"><img src="../images/Logo.svg" alt="Logo de Ecocletas"/></a>
+        <div class="menu-nav" id="menu-nav">
+          <img src="../images/menu.png" class="menu-nav-img" id="menu-nav-img" alt="">
+          <img src="../images/close.png" class="close-nav-img" id="close-nav-img" alt="">
+        </div>
+        <div class="navbar-nav no-visible" id="navbar-nav">
+          <a class="nav-link" href="../../index.html">Inicio</a>
+          <a class="nav-link" href="../pages/ecocletas.html">Ecocletas</a>
+          <a class="nav-link" href="../pages/reservas.html">Reservas</a>
+          <a class="nav-link nav-active" href="#">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    
+    <main>
+        <!-- Section Contacto -->
+      <section id="contacto" class="container-contacto">
+        <div class="contenedor-form">
+          <div class="form-img"></div>
+          <form id="contacto-formulario" class="contacto-form" method="POST">
+            <h3 class="contacto-titulo">Contáctanos</h3>
+            <div class="form-group">
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control-msj" id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje" required ></textarea>
+            </div>
+            <div class="form-group">
+              <select class="form-motivo" id="motivo" name="motivo" required >
+                <option value="">Selecciona un motivo</option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
+              </select>
+            </div>
+            <div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required />
+                <label class="form-check-label" for="terminos"> Acepto los <a href="#">términos y condiciones</a> </label>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="form-btn" id="guardar">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <section class="footer-container-copy">
+          <p>© 2023 - Argentina programa - Desarrollo web inicial.</p>
+        </section>
+        <section class="footer-container-github">
+          <p class="footer-titulo">Grupo B</p>
+          <a href="https://github.com/devsiderio/desarrollador-web-inicial" target="_blank#"><img src="../images/icon-github.png" title="Repositorio del proyecto"></a>
+        </section>
+      </div>
+    </footer>
+
+    <script src="../source/main.js"></script>
+  </body>
+</html>

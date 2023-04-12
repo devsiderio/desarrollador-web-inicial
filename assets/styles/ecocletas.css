@@ -1,0 +1,137 @@
+.section-ecocletas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 80vh;
+}
+    .ecocletas-titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+    }
+    .ecocletas-titulo h2{
+        font-family: "Prata";
+        font-size: 2rem;
+        margin-bottom: 1vh;
+    }
+    .ecocletas-contenedor-general{
+        height: 80%;
+        width: 80%;
+        display: flex;/* 
+        margin-bottom: 5vh; */
+    }
+        .contenedor-imagenes{
+            width: 50%;
+            height: 100%;
+        }
+            .contenedor-imagen-activa{
+                height: 70%;
+                display: flex;
+                justify-content: center;
+            }
+                .imagen-activa{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 30px;
+                    box-shadow: rgba(29, 73, 85, 0.15) 0px 30px 30px 0px;
+                }
+            .contenedor-botones{
+                height: 120px;
+                padding: 10px 15px;
+                white-space: nowrap;
+                overflow-x: scroll;
+                scroll-behavior: smooth;
+                border: 1px solid #67c6dd;
+                border-radius: 10px;
+            }
+            .contenedor-botones#thumbnails::-webkit-scrollbar {
+                height: 10px;
+                border-radius: 10px;
+            }
+            .contenedor-botones::-webkit-scrollbar-thumb {
+                height: 5px;
+                background-color: #67c6dd;
+                border-radius: 0 0 10px 10px;
+            }
+                .thumbs{
+                    border-radius: 10px;
+                    margin: 0 1vw;
+                }
+                    .img-thumbnail{
+                        width: 80px;
+                        border-radius: 10px;
+                    }
+                    .img-thumbnail:hover{
+                        cursor: pointer;
+                        box-shadow: rgba(3, 124, 146, 0.3) 0px 0px 0px 5px;
+                    }
+        .contenedor-descripciones{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+        }
+            .list-group{
+                width: 90%;
+                height: 95%;
+                margin-left: 10%;
+                margin-bottom: 5%;
+                border: 2px solid #d1dbdd;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5%;
+            }
+                .list-group-item{
+                    list-style-type: none;
+                    text-align: center;
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+                .list-group-item-border{
+                    border-bottom: 2px solid #d1dbdd;
+                }
+                .p-producto{
+                    font-weight: 400;
+                    color: #8b8987;
+                }
+
+
+
+@media screen and (max-width:768px){
+    .section-ecocletas{
+        height: auto;
+        margin-top: 5vh;
+    }
+        .ecocletas-titulo{
+            margin: 0 7.5vw;
+            text-align: center;
+        }
+        .ecocletas-contenedor-general{
+            flex-direction: column;
+            margin-top: 5vh;
+        }
+            .contenedor-imagenes{
+                width: 100%;
+            }
+                .contenedor-botones{
+                    margin-top: 5vh;
+                }
+            .contenedor-descripciones{
+                width: 100%;
+                margin-bottom: 5vh;
+            }
+                .list-group{
+                    margin: 5vh 0 0 0;
+                }
+                    .list-group-item-border{
+                        margin-bottom: 2vh;
+                    }
+}
