@@ -6,7 +6,7 @@ const bicis = {
     velocidadMax: 26,
     rangoMaxBateria: 50,
     descripcion:
-      "Una bicicleta eléctrica de montaña con ruedas de 27.5 pulgadas, ideal para terrenos difíciles y aventuras off-road.",
+      "Una bicicleta de montaña con ruedas de 27.5 pulgadas, ideal para terrenos difíciles y aventuras off-road.",
   },
   fiat: {
     nombre: "Fiat 500",
@@ -15,7 +15,7 @@ const bicis = {
     velocidadMax: 23,
     rangoMaxBateria: 60,
     descripcion:
-      "Una bicicleta eléctrica urbana con un diseño inspirado en el icónico Fiat 500, perfecta para uso diario en la ciudad.",
+      "Una bicicleta urbana con un diseño inspirado en el icónico Fiat 500, perfecta para uso diario en la ciudad.",
   },
   randers: {
     nombre: "E-Power Mountain",
@@ -24,7 +24,7 @@ const bicis = {
     velocidadMax: 25,
     rangoMaxBateria: 40,
     descripcion:
-      "Una bicicleta eléctrica de montaña con alta potencia y velocidad, diseñada para los ciclistas más experimentados y exigentes.",
+      "Una bicicleta de montaña con alta potencia y velocidad, diseñada para los ciclistas más experimentados y exigentes.",
   },
   velocity: {
     nombre: "Velocity C3",
@@ -33,7 +33,7 @@ const bicis = {
     velocidadMax: 20,
     rangoMaxBateria: 25,
     descripcion:
-      "Una bicicleta eléctrica plegable con un diseño compacto y ligero, perfecta para transportar en transporte público.",
+      "Una bicicleta plegable con un diseño compacto y ligero, perfecta para transportar en transporte público.",
   },
   vr: {
     nombre: "VR1000W",
@@ -42,7 +42,7 @@ const bicis = {
     velocidadMax: 50,
     rangoMaxBateria: 35,
     descripcion:
-      "Una bicicleta eléctrica de alta potencia y velocidad, diseñada para los ciclistas más audaces y aventureros.",
+      "Una bicicleta de alta potencia y velocidad, diseñada para los ciclistas más audaces y aventureros.",
   },
   giant: {
     nombre: "Explore E+ 2",
@@ -51,7 +51,7 @@ const bicis = {
     velocidadMax: 24,
     rangoMaxBateria: 55,
     descripcion:
-      "Una bicicleta eléctrica de montaña con ruedas de 29 pulgadas, potente y eficiente, diseñada para disfrutar de largas rutas en terrenos difíciles.",
+      "Una bicicleta de montaña con ruedas de 29 pulgadas, potente y eficiente, diseñada para disfrutar de largas rutas en terrenos difíciles.",
   },
   trek: {
     nombre: "Verve+ 2",
@@ -60,7 +60,7 @@ const bicis = {
     velocidadMax: 28,
     rangoMaxBateria: 65,
     descripcion:
-      "Una bicicleta eléctrica urbana con un diseño elegante y funcional, perfecta para el uso diario y las escapadas de fin de semana.",
+      "Una bicicleta urbana con un diseño elegante y funcional, perfecta para el uso diario y las escapadas de fin de semana.",
   },
   specialized: {
     nombre: "Turbo Levo Comp",
@@ -69,6 +69,6 @@ const bicis = {
     velocidadMax: 29,
     rangoMaxBateria: 60,
     descripcion:
-      "Una bicicleta eléctrica de montaña con ruedas de 29 pulgadas, diseñada para disfrutar al máximo de los senderos y los terrenos más exigentes.",
+      "Una bicicleta de montaña con ruedas de 29 pulgadas, diseñada para disfrutar al máximo de los senderos y los terrenos más exigentes.",
   },
 };

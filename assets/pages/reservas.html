@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <link rel="stylesheet" href="/assets/styles/head_foot.css" />
+    <link rel="stylesheet" href="/assets/styles/reservas.css" />
+    <link rel="icon" type="image/png" href="/assets/images/Logo/Logotipo.png" />
+    <title>EcoCletas - Reservas</title>
+  </head>
+  <body>
+    <header class="bg-body-tertiary sticky-top shadow">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a id="logo" class="navbar-brand col" href="#">
+            <img
+              src="/assets/images/Logo/Logo.svg"
+              width="180px"
+              alt="Logo de Ecocletas"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-btn" aria-current="page" href="/index.html"
+                >Inicio</a
+              >
+              <a class="nav-btn" href="/index.html#catalogo">Nuestras bicis</a>
+              <a class="nav-btn" href="#">Reservas</a>
+              <a class="nav-btn" href="/assets/pages/contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--  -->
+    <section id="reservas" class="section-reservas mt-3">
+      <div class="contenedor-titulo-reservas">
+        <h2>Reservas</h2>
+        <p>
+          Para reservar tu EcoCleta, por favor complete el siguiente formulario
+        </p>
+      </div>
+      <div class="contenedor-reservas">
+        <div class="pasos">
+          <!-- botones reservas-thumbnails -->
+          <button type="button" class="thumbs seleccionado">
+            <div onclick="location.href='#wizard-1'" class="thumbnail">
+              <img
+                src="../images/wizard/icon-calendar.png"
+                alt=""
+                class="icon-wizard"
+              />
+              <div>
+                <p class="text-thumbnail">Cuando será la reserva?</p>
+                <p>Paso 1</p>
+              </div>
+            </div>
+          </button>
+          <button type="button" id="wizard-button-2" class="thumbs">
+            <div
+              onclick="location.href='#wizard-1'"
+              class="thumbnail thumbnail-medio"
+            >
+              <img
+                src="../images/wizard/icon-bici.png"
+                alt=""
+                class="icon-wizard"
+              />
+              <div>
+                <p class="text-thumbnail">Elije tu EcoCleta</p>
+                <p>Paso 2</p>
+              </div>
+            </div>
+          </button>
+          <button type="button" id="wizard-button-3" class="thumbs">
+            <div onclick="location.href='#wizard-1'" class="thumbnail">
+              <img
+                src="../images/wizard/icon-person.png"
+                alt=""
+                class="icon-wizard"
+              />
+              <div>
+                <p class="text-thumbnail">Confirma tus datos</p>
+                <p>Paso 3</p>
+              </div>
+            </div>
+          </button>
+        </div>
+        <!-- wizard -->
+        <div class="contenedor-formulario">
+          <form name="wizard" method="POST" class="wizard-form pt-3">
+            <ul class="lista-form mx-auto">
+              <li class="lista-form-item" id="wizard-1">
+                <label for="fecha">Fecha de reserva:</label>
+                <input
+                  type="date"
+                  id="fecha"
+                  name="fecha"
+                  class="control-form"
+                  required
+                />
+                <!-- <button type="button" class="btn btn-info m-2">Adelante</button> -->
+              </li>
+              <li class="lista-form-item" id="wizard-2">
+                <label for="hora">Hora de inicio:</label>
+                <input
+                  type="time"
+                  id="hora"
+                  name="hora"
+                  class="control-form"
+                  required
+                />
+                <!-- <button type="button" class="btn btn-secondary m-2">Atrás</button> -->
+                <button type="button" class="wizard-btn">Adelante</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <footer class="d-flex justify-content-center">
+      <div
+        class="footer-container container d-flex justify-content-between align-items-center py-2"
+      >
+        <div class="footer-container-copy my-auto">
+          <p class="my-auto">© 2023 - Argentina programa</p>
+          <p class="my-auto">Desarrollo web inicial</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/devsiderio/desarrollador-web-inicial"
+            target="_blank#"
+            class="d-flex justify-content-center align-items-center no-underline"
+          >
+            <p class="footer-titulo my-auto pe-3 text-center">Grupo B</p>
+            <img
+              width="40px"
+              src="/assets/images/icon-github.png"
+              title="Repositorio del proyecto"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

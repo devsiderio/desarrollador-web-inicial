@@ -1,0 +1,188 @@
+/* ESTILOS SECCION BIENVENIDA */
+
+#welcome {
+  border-bottom: 1.3em solid #67c6dd;
+  color: #f1f1f1;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/assets/images/bgs/bg-welcome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+#welcome p {
+  font-size: 1.1em;
+}
+
+/* ESTILOS CATÁLOGO */
+
+#thumbnails {
+  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+  border: 1px solid #67c6dd;
+}
+
+#thumbnails::-webkit-scrollbar {
+  height: 10px;
+  border-radius: 10px;
+}
+
+#thumbnails::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 0 0 10px 10px;
+}
+
+#thumbnails::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #67c6dd;
+  border-radius: 0 0 10px 10px;
+}
+
+.thumbs {
+  border: 1px solid black;
+  transition: 200ms;
+  border-radius: var(--bs-border-radius);
+}
+
+.thumbs:hover {
+  border-radius: var(--bs-border-radius);
+  box-shadow: rgba(3, 124, 146, 0.3) 0px 0px 0px 5px;
+}
+
+.seleccionado {
+  border-radius: var(--bs-border-radius);
+  position: relative;
+  transition: ease-in-out 300ms;
+  border-radius: var(--bs-border-radius);
+  box-shadow: rgba(3, 124, 146, 0.3) 0px 0px 0px 5px;
+  filter: blur(1px);
+}
+
+.item-bici {
+  font-weight: 400;
+  color: #292828;
+  list-style: none;
+  border-bottom: 2px solid #d1dbdd;
+}
+
+.item-bici > h4 {
+  font-size: 20px;
+}
+
+.item-bici > h5 {
+  font-size: 16px;
+}
+
+#item-bici-last {
+  border-bottom: 0;
+}
+
+#descripciones {
+  padding: 0;
+  margin: 0;
+  border: 2px solid #d1dbdd;
+  border-radius: 15px;
+}
+
+/* ESTILOS PARA CTA */
+
+#reserva {
+  background-color: #62e9ff;
+  border-radius: 20px 0 0 20px;
+}
+
+#contacto {
+  background-color: #28b9cf;
+  border-radius: 0 20px 20px 0;
+}
+
+#reserva,
+#contacto {
+  margin-top: 1em;
+  padding: 2em 1em;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+#btn-reserva,
+#btn-contacto {
+  text-decoration: none;
+  color: #212121;
+  background-color: #f1f1f1;
+  padding: 0.7em;
+  border-radius: 1em;
+  justify-content: center;
+  font-weight: 600;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  #welcome {
+    height: 400px;
+    background-position: 30%;
+  }
+  .nav-btn {
+    padding-top: 1em;
+    font-size: 1.2em;
+  }
+
+  #reserva {
+    border-radius: 20px 20px 0 0;
+  }
+
+  #contacto {
+    color: #f1f1f1;
+    border-radius: 0 0 20px 20px;
+  }
+
+  #reserva,
+  #contacto {
+    margin-top: 0;
+  }
+}
+
+/* Botones Sociales + flechas */
+/*.social {position:fixed;left:123px;top:371px;z-index:2000;} */
+
+.social {
+  position: fixed;
+  bottom: 2em;
+  z-index: 2000;
+}
+
+.social a {
+  display: inline-block;
+  color: #fff;
+  font-size: 22px;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+.social ul {
+  list-style: none;
+  margin: 0px;
+}
+
+.social ul li .icon-facebook {
+  background: #3b5998;
+}
+
+.social ul li .icon-whatsapp {
+  background: #00e676;
+}
+
+.social ul li a:hover {
+  padding: 8px 20px;
+}
+
+@media all and (max-width: 1100px) {
+  .social {
+    display: none;
+  }
+}

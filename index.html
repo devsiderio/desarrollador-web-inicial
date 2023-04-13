@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/images/Logo/Logotipo.png" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,45 +18,24 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/assets/styles/head_foot.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
     <title>EcoCletas</title>
   </head>
   <body>
-    <!-- API -->
-    <!-- <div class="social">
-      <ul>
-        <li>
-          <a
-            href="https://wa.me/+5493794501465?text=Hola%20tengo%20una%20consulta%20"
-            onclick="javascript:window.open(this.href, '', 'menubar=yes,toolbar=yes,resizable=no,scrollbars=no,height=600,width=600');return false;"
-            class="icon-whatsapp"
-            ><i class="fa-brands fa-whatsapp"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/profile.php?id=100091781557730"
-            onclick="javascript:window.open(this.href, '','height=600,width=600');return false;"
-            class="icon-facebook"
-            ><i class="fa-brands fa-square-facebook"></i
-          ></a>
-        </li>
-      </ul>
-    </div> -->
-    <!-- FIN API -->
-
     <!-- NAVBAR -->
     <header class="bg-body-tertiary sticky-top shadow">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a id="logo" class="navbar-brand col" href="#">
             <img
-              src="./assets/images/Logo.svg"
-              width="200px"
+              src="/assets/images/Logo/Logo.svg"
+              width="180px"
               alt="Logo de Ecocletas"
           /></a>
           <button
@@ -76,8 +56,8 @@
             <div class="navbar-nav">
               <a class="nav-btn" aria-current="page" href="#">Inicio</a>
               <a class="nav-btn" href="#catalogo">Nuestras bicis</a>
-              <a class="nav-btn" href="#reservas">Reservas</a>
-              <a class="nav-btn" href="#contacto">Contacto</a>
+              <a class="nav-btn" href="/assets/pages/reservas.html">Reservas</a>
+              <a class="nav-btn" href="/assets/pages/contacto.html">Contacto</a>
             </div>
           </div>
         </div>
@@ -93,7 +73,7 @@
             y subir cuestas más empinadas, no importa tu experiencia en
             ciclismo. <br />
             Ya sea que quieras explorar la naturaleza o la ciudad, nuestras
-            bicicletas eléctricas son la elección perfecta.
+            <span>E</span>co<span>C</span>letas son la elección perfecta.
           </p>
         </div>
       </section>
@@ -107,7 +87,7 @@
       </section>
 
       <!-- Section Productos -->
-      <section id="catalogo" class="py-3">
+      <section id="catalogo" class="py-2">
         <div class="container text-center">
           <h2>Nuestras EcoCletas</h2>
           <p>
@@ -199,7 +179,7 @@
               </div>
             </div>
             <!-- descripción -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 my-auto">
               <ul class="text-center" id="descripciones">
                 <li class="item-bici my-2">
                   Nombre
@@ -221,7 +201,7 @@
                   Rango de la bateria
                   <h4 id="ran-del-prod"></h4>
                 </li>
-                <li class="item-bici my-2" id="item-bici-last">
+                <li class="item-bici m-3" id="item-bici-last">
                   <h5 id="info-del-prod">Mas info</h5>
                 </li>
               </ul>
@@ -230,231 +210,91 @@
         </div>
       </section>
 
-      <!-- Section Reservas (Wizard) -->
-      <section id="reservas" class="py-3">
-        <div class="container text-center">
-          <h2>Reservas</h2>
-          <p>
-            Para reservar tu EcoCleta, por favor complete el siguiente
-            formulario:
-          </p>
-          <div>
-            <div
-              class="container col-lg-6 rounded-3 d-lg-block d-flex flex-column-reverse"
+      <!-- SECTION CTA -->
+      <section id="CTA" class="container py-1 my-1">
+        <div class="container text-center row mx-auto">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-between align-items-center"
+            id="reserva"
+          >
+            <h2>HACENOS TU RESERVA</h2>
+            <p>
+              Gracias a nuestra red
+              <br />
+              EcoCletas llega a cada rincón del país
+            </p>
+            <a
+              id="btn-reserva"
+              class="shadow"
+              href="/assets/pages/reservas.html"
+              type="button"
+              >RESERVÁ AHORA</a
             >
-              <!-- botones reservas-thumbnails -->
-              <div id="reservas-thumbnails" class="p-1 shadow">
-                <button type="button" class="thumbs seleccionado">
-                  <img
-                    src="./assets/images/wizard/1.jpg"
-                    alt="1"
-                    class="img-thumbnail"
-                    width="80px"
-                    onclick="location.href='#wizard-1'"
-                  />
-                </button>
-                <button type="button" id="wizard-button-2" class="thumbs">
-                  <img
-                    src="./assets/images/wizard/2.jpg"
-                    alt="2"
-                    class="img-thumbnail"
-                    width="80px"
-                    onclick="location.href='#wizard-2'"
-                  />
-                </button>
-                <button type="button" id="wizard-button-3" class="thumbs">
-                  <img
-                    src="./assets/images/wizard/3.jpg"
-                    alt="3"
-                    class="img-thumbnail"
-                    width="80px"
-                    onclick="location.href='#wizard-3'"
-                  />
-                </button>
-              </div>
-            </div>
-            <!-- wizard -->
-            <div class="container col-lg-6">
-              <form name="wizard" method="POST">
-                <ul class="list-group form-group">
-                  <li class="item-bici" id="wizard-1">
-                    <label for="fecha"><h5>Fecha de reserva:</h5></label>
-                    <input
-                      type="date"
-                      id="fecha"
-                      name="fecha"
-                      class="form-control"
-                      required
-                    />
-                    <button type="button" class="btn btn-info m-2">
-                      Adelante
-                    </button>
-                  </li>
-                  <li class="item-bici" id="wizard-2">
-                    <label for="hora"><h5>Hora de inicio:</h5></label>
-                    <input
-                      type="time"
-                      id="hora"
-                      name="hora"
-                      class="form-control"
-                      required
-                    />
-                    <button type="button" class="btn btn-secondary m-2">
-                      Atrás
-                    </button>
-                    <button type="button" class="btn btn-info m-2">
-                      Adelante
-                    </button>
-                  </li>
-                  <li class="item-bici" id="wizard-3">
-                    <label for="modelo"><h5>Modelo:</h5></label>
-                    <select
-                      id="modelo"
-                      name="modelo"
-                      class="form-control text-center"
-                    >
-                      <option value="default">
-                        --Seleccione su EcoCleta--
-                      </option>
-                      <option value="modelo-1">Ancheer 27.5</option>
-                      <option value="modelo-2">Fiat 500</option>
-                      <option value="modelo-3">E-Power Mountain</option>
-                      <option value="modelo-4">Velocity C3</option>
-                      <option value="modelo-5">VR1000W</option>
-                      <option value="modelo-6">Explore E+ 2</option>
-                      <option value="modelo-7">Turbo Levo Comp</option>
-                      <option value="modelo-8">Verve+ 2</option>
-                    </select>
-                    <button type="button" class="btn btn-secondary m-2">
-                      Atrás
-                    </button>
-                    <button type="button submit" class="btn btn-primary m-2">
-                      Reservar
-                    </button>
-                  </li>
-                </ul>
-              </form>
-            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-between align-items-center"
+            id="contacto"
+          >
+            <h2>CONTACTANOS</h2>
+            <p>
+              ¿Te queda alguna duda o consulta? <br />
+              ¿Tenés algún reclamo o sugerencia?
+            </p>
+            <a
+              id="btn-contacto"
+              class="shadow"
+              href="/assets/pages/contacto.html"
+              type="button"
+              >CONTACTANOS</a
+            >
           </div>
         </div>
       </section>
-
-      <!-- Section Contacto -->
-      <section id="contacto" class="py-3">
-        <div class="container d-flex justify-content-center col-lg-6">
-          <div class="card">
-            <div class="card-header">
-              <h4>Contacto</h4>
-            </div>
-            <div class="card-body">
-              <form id="contacto-formulario" method="POST">
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <label for="nombre">Nombre</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nombre"
-                      name="nombre"
-                      placeholder="Nombre completo"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="ejemplo@correo.com"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <label for="telefono">Teléfono</label>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="telefono"
-                      name="telefono"
-                      placeholder="Ej: +5491161234567"
-                      pattern="^(\+?[0-9]{1,3})?[- .]?\(?[0-9]{3}\)?[- .]?[0-9]{3}[- .]?[0-9]{4}$"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea
-                      class="form-control"
-                      id="mensaje"
-                      name="mensaje"
-                      rows="5"
-                      placeholder="Escribe aquí tu mensaje"
-                      required
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <label for="motivo">Motivo</label>
-                    <select
-                      class="form-control"
-                      id="motivo"
-                      name="motivo"
-                      required
-                    >
-                      <option value="">Selecciona un motivo</option>
-                      <option value="consulta">Consulta</option>
-                      <option value="sugerencia">Sugerencia</option>
-                      <option value="reclamo">Reclamo</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <label for="terminos"
-                      >Acepto los términos y condiciones</label
-                    >
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="terminos"
-                        name="terminos"
-                        required
-                      />
-                      <label class="form-check-label" for="terminos">
-                        Acepto los <a href="#">términos y condiciones</a>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-block"
-                      id="guardar"
-                    >
-                      Enviar
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+      <footer class="d-flex justify-content-center mt-3">
+        <div
+          class="footer-container container d-flex justify-content-between align-items-center py-2"
+        >
+          <div class="footer-container-copy my-auto">
+            <p class="my-auto">© 2023 - Argentina programa</p>
+            <p class="my-auto">Desarrollo web inicial</p>
+          </div>
+          <div>
+            <a
+              href="https://github.com/devsiderio/desarrollador-web-inicial"
+              target="_blank#"
+              class="d-flex justify-content-center align-items-center no-underline"
+            >
+              <p class="footer-titulo my-auto pe-3 text-center">Grupo B</p>
+              <img
+                width="40px"
+                src="./assets/images/icon-github.png"
+                title="Repositorio del proyecto"
+              />
+            </a>
           </div>
         </div>
-      </section>
-      <footer class="py-3">
-        <h5>EcoCletas - 2023</h5>
       </footer>
+      <!-- API -->
+      <div class="social">
+        <ul>
+          <li>
+            <a
+              href="https://wa.me/+5493794501465?text=Hola%20tengo%20una%20consulta%20"
+              onclick="javascript:window.open(this.href, '', 'menubar=yes,toolbar=yes,resizable=no,scrollbars=no,height=600,width=600');return false;"
+              class="icon-whatsapp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091781557730"
+              onclick="javascript:window.open(this.href, '','height=600,width=600');return false;"
+              class="icon-facebook"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -463,12 +303,5 @@
     ></script>
     <script src="./assets/source/catalogo.js"></script>
     <script src="./assets/source/main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.4.min.js"
-      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="./assets/source/formulario_JQ.js"></script>
   </body>
 </html>

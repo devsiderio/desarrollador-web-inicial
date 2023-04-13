@@ -1,0 +1,61 @@
+/* ESTILOS NAV */
+
+.nav-btn {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.nav-btn::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #67c6dd;
+  transition: 300ms ease-in;
+}
+
+.nav-btn:hover::after {
+  width: 100%;
+}
+
+/* ESTILOS FOOTER */
+
+footer p {
+  font-size: 0.8rem;
+}
+
+.footer-container {
+  border-top: 2px solid #d9eaee;
+}
+
+.footer-container-grupo {
+  margin: 1vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.footer-titulo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #00c7df;
+  text-decoration: none;
+}
+
+.footer-container-copy {
+  margin: 1vh 0 3vh 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+  }
+}
