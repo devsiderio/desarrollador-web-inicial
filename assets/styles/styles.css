@@ -1,29 +1,18 @@
-/*
-
-Ppal:#62E9FF 
-Scdr: #32A1B3 
-Trcr: #FF7ABA 
-#FFEB47
-*/
+/* ESTILOS GENERALes */
 html {
   scroll-behavior: smooth;
 }
 
-h2,
-h3 {
-  color: black;
+h1,
+h2 {
+  font-family: "Prata";
 }
 
-/* Estilos Presentación de Empresa */
-#welcome {
-  background-color: #62e9ff;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-color: rgb(242, 242, 242);
 }
-
-/* Estilos Presentación de Personal */
-#personal {
-  background-color: #47ff56;
-}
-/* Estilos Catálogo */
 
 button {
   border: 0;
@@ -31,43 +20,68 @@ button {
   background-color: transparent;
 }
 
-.thumbs {
-  border: 2px solid transparent;
-  transition: 200ms;
+/* ESTILOS NAVBAR */
+
+.nav-btn {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
-.thumbs:hover {
-  border: 2px solid #ffeb47;
-  border-radius: var(--bs-border-radius);
-}
-
-.seleccionado {
-  border: 2px solid #ffeb47;
-  border-radius: var(--bs-border-radius);
-  position: relative;
-  transition: ease-in-out 300ms;
-}
-
-.seleccionado::after {
+.nav-btn::after {
   content: "";
-  filter: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 235, 71, 0.8);
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #67c6dd;
+  transition: 300ms ease-in;
 }
+
+.nav-btn:hover::after {
+  width: 100%;
+}
+
+/* ESTILOS SECCION BIENVENIDA */
+
+#welcome {
+  border-bottom: 1em solid #67c6dd;
+  color: #f1f1f1;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/images/bgs/bg-welcome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #welcome {
+    height: 500px;
+    background-position: 30%;
+  }
+  .nav-btn {
+    padding-top: 1em;
+    font-size: 1.2em;
+  }
+}
+
+#welcome p {
+  font-size: 1.1em;
+}
+
+/* ESTILOS CATÁLOGO */
 
 #thumbnails {
   white-space: nowrap;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  background-color: #32a1b3;
-  border: 2px solid #ffeb47;
-  border-radius: 12px;
+  border-radius: 10px;
+  border: 1px solid #67c6dd;
 }
 
 #thumbnails::-webkit-scrollbar {
@@ -82,12 +96,53 @@ button {
 
 #thumbnails::-webkit-scrollbar-thumb {
   height: 5px;
-  background-color: #ffeb47;
+  background-color: #67c6dd;
   border-radius: 0 0 10px 10px;
 }
 
-#catalogo {
-  background-color: #62e9ff;
+.thumbs {
+  border: 1px solid black;
+  transition: 200ms;
+  border-radius: var(--bs-border-radius);
+}
+
+.thumbs:hover {
+  border-radius: var(--bs-border-radius);
+  box-shadow: rgba(3, 124, 146, 0.3) 0px 0px 0px 5px;
+}
+
+.seleccionado {
+  border-radius: var(--bs-border-radius);
+  position: relative;
+  transition: ease-in-out 300ms;
+  border-radius: var(--bs-border-radius);
+  box-shadow: rgba(3, 124, 146, 0.3) 0px 0px 0px 5px;
+  filter: blur(1px);
+}
+
+.item-bici {
+  font-weight: 400;
+  color: #292828;
+  list-style: none;
+  border-bottom: 2px solid #d1dbdd;
+}
+
+.item-bici > h4 {
+  font-size: 24px;
+}
+
+.item-bici > h5 {
+  font-size: 18px;
+}
+
+#item-bici-last {
+  border-bottom: 0;
+}
+
+#descripciones {
+  padding: 0;
+  border: 2px solid #d1dbdd;
+  border-radius: 15px;
 }
 
 /* Estilos Wizard */

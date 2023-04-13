@@ -33,7 +33,7 @@ const bicis = {
     velocidadMax: 20,
     rangoMaxBateria: 25,
     descripcion:
-      "Una bicicleta eléctrica plegable con un diseño compacto y ligero, perfecta para transportar en transporte público o almacenar en espacios reducidos.",
+      "Una bicicleta eléctrica plegable con un diseño compacto y ligero, perfecta para transportar en transporte público.",
   },
   vr: {
     nombre: "VR1000W",
