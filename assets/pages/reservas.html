@@ -24,7 +24,7 @@
     <header class="bg-body-tertiary sticky-top shadow">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a id="logo" class="navbar-brand col" href="#">
+          <a id="logo" class="navbar-brand col" href="/index.html">
             <img
               src="/assets/images/Logo/Logo.svg"
               width="180px"
@@ -113,8 +113,9 @@
           </button>
         </div>
         <!-- wizard -->
-        <div class="contenedor-formulario">
-          <form name="wizard" method="POST" class="wizard-form pt-3">
+        <div class="contenedor-formulario" id="cont-form">
+          <!-- Inyectado js -->
+          <form name="wizard" class="wizard-form pt-3">
             <ul class="lista-form mx-auto">
               <li class="lista-form-item" id="wizard-1">
                 <label for="fecha">Fecha de reserva:</label>
@@ -136,7 +137,6 @@
                   class="control-form"
                   required
                 />
-                <!-- <button type="button" class="btn btn-secondary m-2">Atrás</button> -->
                 <button type="button" class="wizard-btn">Adelante</button>
               </li>
             </ul>
@@ -175,5 +175,6 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/source/reservas.js"></script>
   </body>
 </html>
