@@ -137,8 +137,7 @@
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
 }
 
-#btn-reserva,
-#btn-contacto {
+.btn-cta {
   text-decoration: none;
   color: #212121;
   background-color: #f1f1f1;
@@ -146,6 +145,17 @@
   border-radius: 1em;
   justify-content: center;
   font-weight: 600;
+  list-style: none;
+}
+
+.btn-cta:hover {
+  text-decoration: none;
+  transition: 500ms;
+  color: #f1f1f1;
+  background-color: #10606d;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  justify-content: center;
   list-style: none;
 }
 
