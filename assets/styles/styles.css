@@ -10,8 +10,13 @@ html {
 }
 
 h1 {
-  font-family: "Prata";
   color: #67c6dd;
+}
+
+h1,
+h2 {
+  font-family: "Prata";
+  font-weight: 600;
 }
 
 span {
