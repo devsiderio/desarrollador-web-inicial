@@ -90,6 +90,34 @@
   border-radius: 15px;
 }
 
+/* ESTILOS PERSONAL*/
+
+.personal {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pers-1 {
+  background-image: url("../images/personal/joaquin-rotondo.jpg");
+}
+
+.pers-2 {
+  background-image: url("../images/personal/ayelen-reinglestein.png");
+}
+
+.pers-3 {
+  background-image: url("../images/personal/juan-barrios.png");
+}
+
+.pers-4 {
+  background-image: url("../images/personal/pablo-almiron-soto.png");
+}
+
+.pers-5 {
+  background-image: url("../images/personal/mariano-portal.png");
+}
+
 /* ESTILOS PARA CTA */
 
 #reserva {
