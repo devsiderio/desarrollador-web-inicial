@@ -1,0 +1,8 @@
+.form-img {
+    height: 100%;
+    width: 45%;
+    background-position: center;
+    background-image: url("/assets/images/bgs/bg-welcome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
